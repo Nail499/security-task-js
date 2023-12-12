@@ -1,0 +1,22 @@
+{
+  "services": [
+    {
+      "id": 1,
+      "image": "https://preview.colorlib.com/theme/security/img/s1.jpg.webp",
+      "name": "Basic & Common Repairs",
+      "description": "Who are in extremely love with eco friendly system."
+    },
+    {
+      "id": 2,
+      "image": "https://preview.colorlib.com/theme/security/img/s2.jpg.webp",
+      "name": "Brake Repairs & Services",
+      "description": "Who are in extremely love with eco friendly system."
+    },
+    {
+      "id": 3,
+      "image": "https://preview.colorlib.com/theme/security/img/s3.jpg.webp",
+      "name": "Preventive Maintenance",
+      "description": "Who are in extremely love with eco friendly system."
+    }
+  ]
+}

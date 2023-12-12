@@ -58,6 +58,11 @@ ul {
     display: flex;
     gap: 9px;
 }
+.navlow .list ul li #addbtn{
+    width: 40px;
+    background-color: #04091E;
+    color: white;
+}
 
 .navup .text ul li:hover {
     color: #FAB700;
@@ -227,6 +232,18 @@ hr {
     gap: 10px;
     padding: 26px;
     background-color: #F9F9FF;
+    position: relative;
+}
+.s2-in .boxes .box1 .heart{
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    color: red;
+}
+.s2-in .boxes .box1 button{
+  background-color: #FAB700;
+  border: 1px solid red;
+  color: white;
 }
 
 .s2-in .box1 .text {
