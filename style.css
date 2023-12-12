@@ -21,6 +21,7 @@
     color: white;
     padding: 7px 0;
     transition: all 1s ease;
+    z-index: 999;
 }
 
 .navscroll {
@@ -76,6 +77,10 @@ ul {
     gap: 26px;
     font-size: 13px;
     cursor: pointer;
+}
+.navlow .menu{
+    font-size: 22px;
+    display: none;
 }
 
 .dropbtn {
@@ -221,6 +226,7 @@ hr {
     text-align: left;
     gap: 10px;
     padding: 26px;
+    background-color: #F9F9FF;
 }
 
 .s2-in .box1 .text {
@@ -246,6 +252,7 @@ hr {
 
 .s3 {
     width: 100%;
+    background-color: #F9F9FF;
 }
 
 .s3-in {
@@ -273,7 +280,227 @@ hr {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    gap: 40px;
+    padding: 70px 0;
 }
 .s3-in .box1{
     width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    text-align: left;
+    background-color: white;
+    padding: 38px;
+    gap: 10px;
+}
+.s3-in .box1 .box1-up{
+    font-size: 12px;
+}
+.s3-in .box1 .box1-low{
+    font-size: 14px;
+    color: gray;
+    font-weight: normal;
+}
+.s3-in .boxes .box1:hover{
+    background-color: #FAB700;
+    transition: .5s;
+    box-shadow: 10px 16px 36px -19px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 10px 16px 36px -19px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 16px 36px -19px rgba(0,0,0,0.75);
+    cursor: pointer;
+}
+.s4 {
+    width: 100%;
+    background-color: #F9F9FF;
+}
+
+.s4-in {
+    width: 100%;
+    display: flex;
+    padding: 40px 0;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+}
+
+.s4-in .text h1 {
+    font-size: 38px;
+}
+
+.s4-in .text p {
+    font-size: 14px;
+    color: gray;
+    font-weight: 300;
+    margin-top: 9px;
+}
+.s4-in .main{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px 0;
+}
+.s4-in .main .box1{
+    width: 22%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.s4-in .main .box1 .text{
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.s4-in .main .box1 .text div{
+    background-color: black;
+    color: white;
+    width: 50%;
+    text-align: center;
+    padding: 4px;
+}
+.s4-in .main .box1 .text h3{
+    font-size: 17px;
+}
+.s4-in .main .box1 .img img{
+    width: 100%;
+    overflow: hidden;
+}
+.s4-in .main .box1 .img{
+    overflow: hidden;
+}
+.s4-in .main .box1 .textbottom{
+    display: flex;
+    justify-content: space-between;
+    color: gray;
+    font-size: 14px;
+}
+.s4-in .main .box1:hover .text h3{
+    color: #FAB700;
+    transition: .3s;
+}
+.s4-in .main .box1:hover .img img{
+    transform: scale(1.05);
+    transition: .3s;
+    overflow: hidden;
+}
+
+footer{
+    width: 100%;
+    background-color: #04091E;
+    color: white;
+}
+.footer-in{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 100px 0;
+}
+
+.footer-in .box1{
+    width: 41%;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+.footer-in .box1 h2{
+    font-size: 17px;
+}
+.footer-in .box1 p{
+    font-size: 14px;
+    color: #777777;
+}
+.footer-in .box2{
+    width: 32%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 28px;
+}
+.footer-in .box2 h2{
+    font-size: 17px;
+}
+.footer-in .box2 p{
+    font-size: 14px;
+    color: #777777;
+}
+.footer-in .box2 div input{
+    width: 80%;
+    padding: 9.5px;
+}
+.footer-in .box2 div button{
+    padding: 9.5px;
+    background-color: #FAB700;
+    border:2px solid #FAB700;
+}
+.footer-in .box3{
+    width: 17%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 34px;
+}
+.footer-in .box3 h2{
+    font-size: 17px;
+}
+.footer-in .box3 p{
+    font-size: 14px;
+    color: #777777;
+}
+.footer-in .box3 div ul{
+    list-style: none;
+    display: flex;
+    gap: 17px;
+}
+.footer-in .box3 div ul li:hover{
+color: #FAB700;
+transition: .2s;
+}
+
+
+
+
+@media screen and (max-width:768px) {
+    .navlow .list{
+        display: none;
+    }
+    .navlow .menu{
+        display: block;
+    }
+    .s1-in .text{
+        width: auto;
+    }
+    .s2-in .boxes{
+        flex-direction: column;
+        gap: 50px;
+    }
+    .s2-in .boxes .box1{
+        width: 100%;
+        display: block;
+        text-align: center;
+    }
+    .s3-in .box1{
+        width: 80%;
+    }
+    .s4-in .main{
+        flex-direction: column;
+        gap: 50px;
+    }
+    .s4-in .main .box1{
+        width: 80%;
+    }
+    .footer-in{
+        flex-wrap: wrap;
+        gap: 50px;
+    }
+    .footer-in .box1{
+        width: 45%;
+    }
+    .footer-in .box2{
+        width: 45%;
+    }
+    
 }
