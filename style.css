@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
+  
 }
 
 ::selection {
@@ -22,6 +23,8 @@
     padding: 7px 0;
     transition: all 1s ease;
     z-index: 999;
+    text-decoration: none;
+    color: white;
 }
 
 .navscroll {
